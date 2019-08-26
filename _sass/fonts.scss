@@ -1,0 +1,26 @@
+@font-face{
+  src: url('/assets/fonts/gt-america-light.woff') format('woff');
+  font-family: gt-light;
+}
+@font-face{
+  src: url('/assets/fonts/gt-america-regular.woff') format('woff');
+  font-family: gt-regular;
+}
+@font-face{
+  src: url('/assets/fonts/gt-america-regularitalic.woff') format('woff');
+  font-family: gt-italic;
+}
+@font-face{
+  src: url('/assets/fonts/gt-america-bold.woff') format('woff');
+  font-family: gt-bold;
+}
+@font-face{
+  src: url('/assets/fonts/gt-america-bolditalic.woff') format('woff');
+  font-family: gt-bold-italic;
+}
+
+$f_sans-light: 'gt-light', sans-serif;
+$f_sans-reg: 'gt-regular', sans-serif;
+$f_sans-italic: 'gt-italic', sans-serif;
+$f_sans-bold: 'gt-bold', sans-serif;
+$f_sans-bold-italic: 'gt-bold-italic', sans-serif;
