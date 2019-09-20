@@ -1,10 +1,16 @@
 <header class="header">
-  <nav>
-    <p><strong>Links</strong></p>
-    {% for item in site.data.nav %}
-      <a href="{{ item.link }}" {% if page.url == item.link %} class="selected" {% endif %}>
-        {{ item.name }}
+  <nav class="row middle-xs">
+    <div class="col-xs-6 start-xs">
+      <a href="/" class="logo">
+        <img src="/assets/images/logo.svg" alt="Logo">
       </a>
-    {% endfor %}
+    </div>
+    <div class="col-xs-6 end-xs">
+      {% for item in site.data.nav %}
+        <a href="{{ item.link }}" {% if page.url == item.link %} class="selected" {% endif %}>
+          {{ item.name }}
+        </a>
+      {% endfor %}
+    </div>
   </nav>
 </header>

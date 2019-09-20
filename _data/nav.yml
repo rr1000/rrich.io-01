@@ -1,10 +1,6 @@
+- name: Home
+  link: /
 - name: Blog
-  link: /writing
-- name: Email
-  link: mailto:rrichrs@gmail.com
-- name: Twitter
-  link: https://twitter.com/_ryanSrich
-- name: LinkedIn
-  link: https://www.linkedin.com/in/rrichrs/
-- name: GitHub
-  link: https://github.com/rr1000
+  link: /tbd
+- name: Contact
+  link: /contact

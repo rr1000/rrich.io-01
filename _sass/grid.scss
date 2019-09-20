@@ -1,39 +1,10 @@
-.grid{
-  display: grid;
-  grid-template-columns: 5fr 2fr repeat(5, 1fr);
-  grid-column-gap: 30px;
-  height: 100%;
-  z-index: 2;
-  position: relative;
-}
-.grid-02{
-  @extend .grid;
-  grid-template-columns: 5fr repeat(7, 1fr);
-}
-.column{
-  justify-content: left;
-  align-items: left;
-  display: flex;
-  .block{
-    background-image: linear-gradient(-90deg, #010101 0%, #383428 87%);
-    height: 100%;
-    width: 100%;
-  }
-}
-@media all and (max-width: 1230px){
-  .grid{
-    grid-template-columns: 4fr 4fr
-  }
-}
-@media all and (max-width: 512px){
-  .grid{
-    grid-template-columns: 5fr 5fr
-  }
-  .grid-02{
-    grid-template-columns: 10fr
-  }
-}
-.container{
-  max-width: 660px;
-  margin: 0 auto;
+@import "flexboxgrid.scss";
+
+/* ---------------------------------- */
+/* Grid overrides */
+/* ---------------------------------- */
+
+.inner-grid{
+  background-color: #EAEAEA;
+  padding: 40px;
 }

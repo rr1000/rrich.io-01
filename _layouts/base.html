@@ -9,9 +9,11 @@
   {% seo %}
 </head>
 <body class="{{page.body}}">
-  <div class="container">
-    {{content}}
-    {% include nav.html %}
+  <div class="grid">
+    <div class="inner-grid">
+      {% include nav.html %}
+      {{content}}
+    </div>
     {% include footer.html %}
   </div>
 </body>
