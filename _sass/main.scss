@@ -11,63 +11,37 @@ body{
   font-family: $f_sans-light;
   font-style: normal;
   background-color: $c_white;
-  color: $c_black;
-  font-size: 16px;
+  color: $c_white;
+  background-color: $c_black;
+  font-size: 18px;
   a{
+    color: $c_white;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
     text-decoration: none;
-    color: $c_black;
     &:hover{color: $c_gray-1}
   }
   strong{font-family: $f_sans-bold;}
 }
-.header{
-  nav{
-    a{
-      display: inline-block;
-      margin: 0px 0 0 20px;
-      padding: 0;
-      text-transform: lowercase;
-    }
-    a.logo{margin: 0;}
-    a.selected{
-      font-family: $f_sans-bold;
-    }
-    @media all and (max-width: 768px){
-      a{margin: 20px 20px 0 0;}
-    }
-  }
+.light-text{
+  color: $c_gray-1;
 }
-.home-content{
+.long-text{
   margin: 50px 0 0 0;
-  img{
-    max-width: 100%;
-    height: auto;
-    @media all and (max-width: 768px){
-      margin: 30px 0 0 0;
-    }
-  }
+  line-height: 1.5;
   p{
-    font-size: 19px;
-    line-height: 1.6;
     margin: 0 0 30px 0;
-    &:last-of-type{
-      margin: 0;
-    }
-  }
-  a{
-    border-bottom: 2px solid lighten($c_gray-1, 20%);
+    &:last-of-type{margin: 0;}
   }
 }
-.footer{
-  padding: 30px 0;
-  font-size: 12px;
-  color: $c_gray-2;
-  p.small{max-width: 200px;}
-  @media all and (max-width: 768px){
-    div{
-      margin: 0 0 20px 0;
-      padding: 0;
-      &:last-of-type{margin: 0;}
-    }
+nav{
+  margin: 50px 0 0 0;
+  a{
+    display: inline-block;
+    margin: 0 0 20px 0;
+  }
+}
+@media all and (max-width: 767px){
+  .hide-xs{
+    display: none;
   }
 }
