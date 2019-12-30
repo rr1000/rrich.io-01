@@ -1,16 +1,5 @@
-<header class="header">
-  <nav class="row middle-xs">
-    <div class="col-sm-6 col-xs-12 start-xs start-sm">
-      <a href="/" class="logo">
-        <img src="/assets/images/logo.svg" alt="Logo">
-      </a>
+{% for item in site.data.nav %}
+    <div>
+        <a href="{{ item.link }}" {% if page.url == item.link %} class="selected" {% endif %}>{{ item.name }}</a>
     </div>
-    <div class="col-sm-6 col-xs-12 start-xs end-sm">
-      {% for item in site.data.nav %}
-        <a href="{{ item.link }}" {% if page.url == item.link %} class="selected" {% endif %}>
-          {{ item.name }}
-        </a>
-      {% endfor %}
-    </div>
-  </nav>
-</header>
+{% endfor %}
