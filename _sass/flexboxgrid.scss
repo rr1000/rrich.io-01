@@ -9,6 +9,11 @@
   }
 }
 
+.grid-alt{
+  @extend .grid;
+  padding: 0;
+}
+
 .row {
   box-sizing: border-box;
   display: -ms-flexbox;

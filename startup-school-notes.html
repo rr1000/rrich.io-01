@@ -1,0 +1,50 @@
+---
+layout: base
+title: 2014 YC Startup School Notes | rrich.io
+body: startup
+---
+<div class="yc-announcement">
+<div class="grid-alt">
+    <div class="row">
+        <div class="col-xs-12 col-sm-9">
+            <p>Hello! Please be aware that these notes are from YC Startup School 2014, Silicon Valley. I had taken them down for several years, but recently I've seen an uptick in traffic for these notes. As a result I've decided to resurect them. You can see the original <a href="https://news.ycombinator.com/item?id=8442712">HN thread here</a>.</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="grid">
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <p class="light-text">Ryan Rich</p>
+            <nav>
+                <a href="/">Home</a>
+                {% include nav.html %}
+            </nav>
+        </div>
+        <div class="col-sm-8 col-xs-12">
+            <div class="startup-school">
+                <header>
+                    <h1>YC Startup School Live Notes</h1>
+                    <p>The Silicon Valley version of YC's Startup School is today. As always the entire event will stream live on <a href="http://www.startupschool.org/" target="_blank">startupschool.org</a>. If you don't have access to a strong internet connection or would rather read updates, I'll be documenting my personal notes throughout the day right here.</p>
+                </header>
+                {% for item in site.data.startup-school.speakers %}
+                <div class="speaker-block">
+                    <h1><span>{{item.time}}</span> - {{item.name}}, {{item.company}}</h1>
+                    <h2>{{item.subhead}}</h2>
+                    <h3>{{item.bio}} <a href="{{item.biolink}}" target="_blank">Read More »</a></h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-1"><h4>Notes</h4></div>
+                        <div class="col-xs-12 col-sm-11">
+                            <ul>
+                                {% for entry in item.notes %}
+                                    <li>{{ entry.point }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
