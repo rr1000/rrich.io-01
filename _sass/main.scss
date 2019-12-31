@@ -27,7 +27,7 @@ body{
 }
 .long-text{
   margin: 50px 0 0 0;
-  line-height: 1.5;
+  line-height: 1.4;
   p{
     margin: 0 0 30px 0;
     &:last-of-type{margin: 0;}
@@ -40,8 +40,124 @@ nav{
     margin: 0 0 20px 0;
   }
 }
+
+/* ---------------------------------- */
+/* Startup School Notes */
+/* ---------------------------------- */
+
+.startup{
+  .light-text{
+    color: $c_black;
+  }
+  nav{
+    a{
+      color: $c_black;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+  }
+  background-color: $c_white;
+  color: $c_black;
+  .startup-school{
+    header{
+      background-color: #efefef;
+      color: rgb(255, 102, 0);
+      padding: 30px;
+      border-radius: 5px;
+      margin: 0 0 30px 0;
+      h1{
+        font-size: 22px;
+        font-family: $f_sans-bold;
+        margin: 0 0 30px 0;
+      }
+      p{
+        line-height: 1.4;
+        color: $c_gray-2;
+        a{
+          color: $c_black;
+          border-bottom: 1px solid rgba(0,0,0,0.2);
+        }
+      }
+    }
+    .speaker-block{
+      margin: 0 0 30px 0;
+      padding: 0 0 20px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      h1{
+        font-size: 18px;
+        font-family: $f_sans-bold;
+        margin: 0 0 10px 0;
+      }
+      h2{
+        font-size: 16px;
+        color: $c_gray-2;
+        margin: 0 0 10px 0;
+      }
+      h3{
+        font-size: 16px;
+        color: $c_gray-2;
+        margin: 0 0 20px 0;
+        line-height: 1.4;
+        a{color: rgb(255, 102, 0);}
+      }
+    }
+    h4{
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $c_gray-1;
+      font-family: $f_sans-bold;
+      margin: 5px 0 10px 0;
+    }
+    ul{
+      color: $c_gray-2;
+      li{
+        list-style: disc outside none;
+        margin: 0 0 5px 20px;
+        line-height: 1.4;
+        color: $c_gray-2;
+      }
+    }
+  }
+}
+
+.yc-announcement{
+  background-color: $c_black;
+  font-size: 16px;
+  line-height: 1.4;
+  color: $c_white;
+  padding: 30px;
+}
+
+/* ---------------------------------- */
+/* Responsive */
+/* ---------------------------------- */
+
+@media all and (max-width: 940px){
+  .startup{
+    .startup-school{
+      .speaker-block{
+        ul{
+          li{
+            margin: 0 0 5px 40px;
+          }
+        }
+      }
+    } 
+  }
+}
 @media all and (max-width: 767px){
   .hide-xs{
     display: none;
+  }
+  .startup{
+    .startup-school{
+      header{margin: 30px 0;}
+      .speaker-block{
+        ul{
+          li{
+            margin: 0 0 5px 20px;
+          }
+        }
+      }
+    } 
   }
 }
