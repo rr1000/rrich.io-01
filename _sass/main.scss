@@ -26,18 +26,34 @@ body{
   color: $c_gray-1;
 }
 .long-text{
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
   line-height: 1.4;
   p{
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
     &:last-of-type{margin: 0;}
   }
 }
 nav{
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
   a{
     display: inline-block;
     margin: 0 0 20px 0;
+  }
+}
+h2{
+  font-size: 20px;
+  font-family: $f_sans-bold;
+  margin: 0 0 30px 0;
+  padding: 0 0 30px 0;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+ul{
+  margin: 0 0 30px 0;
+  li{
+    a{
+      display: inline-block;
+      margin: 0 0 10px 0;
+    }
   }
 }
 
