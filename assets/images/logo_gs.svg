@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>logo_gs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="500" height="500" rx="50"></rect>
+    </defs>
+    <g id="logo_gs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Screen-Shot-2020-05-09-at-3.10.01-PM">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#4CCF75" xlink:href="#path-1"></use>
+            <text id="GS" mask="url(#mask-2)" font-family="Roboto-Bold, Roboto" font-size="272" font-weight="bold" fill="#FFFFFF">
+                <tspan x="77" y="343">G</tspan>
+                <tspan x="262.273438" y="343" font-family="Roboto-Light, Roboto" font-weight="300">S</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
