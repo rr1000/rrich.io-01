@@ -1,0 +1,42 @@
+---
+layout: base
+title: Ryan is writing.
+body: writing
+---
+<header>
+    <div class="grid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 start-sm">
+                <div class="rr--logo">
+                    <a href="/"><img src="/assets/images/logo.svg" alt="Logo"></a>
+                    <p>rrich.io</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 end-sm">
+                {% include nav.html %}
+            </div>
+        </div>
+    </div>
+</header>
+<div class="grid rr--masthead">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>writing</h2>
+            {% for item in site.data.writing %}
+                <p><a href="{{item.link}}" target="_blank">{{item.url}}</a></p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="grid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 start-xs">
+                <p>Ryan Rich | rrich.io &copy; 2020</p>   
+            </div>
+            <div class="col-xs-12 col-sm-6 end-xs">
+                <a href="mailto:rrichrs@gmail.com">Email</a>
+            </div>
+        </div>
+    </div>
+</footer>

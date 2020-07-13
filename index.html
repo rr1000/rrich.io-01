@@ -1,44 +1,54 @@
 ---
 layout: base
-title: Home // rrich.io
+title: Ryan is making software.
 body: home
 ---
-<div class="grid">
-    <div class="row">
-        <div class="col-xs-12 col-sm-3">
-            <p class="light-text logo">Ryan Rich</p>
-            <nav>
-                {% include nav.html %}
-            </nav>
-        </div>
-        <div class="col-xs-12 col-sm-5">
-            <p class="light-text hide-xs">About</p>
-            <div class="long-text">
-                <h2>Hello. My name is Ryan Rich. I'm a product leader focused on building meaningful experiences for users and amazing engineering teams for businesses.</h2>
+<header>
+    <div class="grid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 start-sm">
+                <div class="rr--logo">
+                    <a href="/"><img src="/assets/images/logo.svg" alt="Logo"></a>
+                    <p>rrich.io</p>
+                </div>
             </div>
-            <p class="light-text hide-xs">Work</p>
-            <div class="long-text">
-                <!-- <h5><img src="/assets/images/logo_hka.png" alt="New Logo"> Stealth</h5>
-                <p>I'm currently working on a newly funded venture that aims to automatically solve HIPAA, SOC 2 and GDPR compliance. More details coming later this year.</p> -->
-                <!-- <div class="divider"></div> -->
-                <h5><img src="/assets/images/logo_pk.png" alt="Product Kaiju Logo"> Product Kaiju</h5>
-                <p>At PK I assist my consulting clients with their product management and CompSec needs. Here's a small sample of the companies I've helped:</p>
-                <ul>
-                    <li><a target="_blank" href="//plaid.com">Plaid</a></li>
-                    <li><a target="_blank" href="//wayup.com">WayUp</a></li>
-                    <li><a target="_blank" href="//divvycloud.com">DivvyCloud</a></li>
-                </ul>
-                <div class="divider"></div>
-                <h5><img src="/assets/images/logo_datica.svg" alt="Datica Logo"> Datica</h5>
-                <p>Up until March 2020, I was the Chief Product Officer at <a href="https://datica.com" target="_blank">Datica</a> where I helped organizations large and small protect healthcare information in the cloud. As CPO I was responsible for product design, strategy, and management. Previously at Datica, I built out product and design functions as VP of Product and Director of Design.</p>
-                <div class="divider"></div>
-                <h5><img src="/assets/images/logo_mv.svg" alt="More Vang logo"> Global Thinking (More Vang)</h5>
-                <p>Before Datica I worked with brands like Volkswagen and Ducati on automating their digital marketing strategies.</p>
-                <div class="divider"></div>
-                <h5><img src="/assets/images/logo_gs.svg" alt="Gradesnap Logo"> Gradesnap</h5>
-                <p>My career started by co-founding a startup that helped educators streamline their grading process with the assistance of their mobile device. Utilizing optical character recognition technology (way back before things like machine learning and AI were cool), we helped college professors drastically improve their grading times, allowing them to spend more time educating.</p>
-                <p>I’m passionate about building products at the intersection of security, privacy, and autonomy. I graduated from R.I.T. with a B.S. in applied science and currently reside in the Pacific Northwest.</p>
+            <div class="col-xs-12 col-sm-6 end-sm">
+                {% include nav.html %}
             </div>
         </div>
     </div>
+</header>
+<div class="grid rr--masthead">
+    <div class="row">
+        <div class="col-xs-12 col-sm-5">
+            <h2>about</h2>
+            <p>My name is Ryan Rich. I’m a product and technology leader focused on building meaningful products and high-powered engineering teams.</p>
+            <p>I have a particular focus on privacy, security and regulatory compliance.</p>
+            <p>I’m currently working on a newly funded venture called <a href="https://www.haekka.com">Haekka</a>. Before that, I was the Chief Product Officer at <a href="https://datica.com">Datica</a> where I helped organizations large and small protect healthcare information in the cloud.</p>
+            <p>Before Datica, I co-founded a startup that helped educators streamline their grading process with the assistance of their mobile device. Utilizing optical character recognition technology (way before things like machine learning and AI were cool), I helped college professors drastically improve their grading process, allowing them to spend more time educating.</p>
+            <p>I live in Portland Oregon with my wife, daughter, dog and two cats.</p>
+        </div>
+        <div class="col-xs-12 col-sm-7">
+            <h2>work</h2>
+            {% for item in site.data.work %}
+                <div class="rr--work-block">
+                    <p><strong>{{ item.company }}</strong></p>
+                    <p><a href="{{item.link}}" target="_blank">{{item.url}}</a></p>
+                    <p>{{item.description}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
+<footer>
+    <div class="grid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 start-xs">
+                <p>Ryan Rich | rrich.io &copy; 2020</p>   
+            </div>
+            <div class="col-xs-12 col-sm-6 end-xs">
+                <a href="mailto:rrichrs@gmail.com">Email</a>
+            </div>
+        </div>
+    </div>
+</footer>

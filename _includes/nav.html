@@ -1,5 +1,5 @@
+<nav class="rr--nav">
 {% for item in site.data.nav %}
-    <div>
-        <a href="{{ item.link }}" {% if page.url == item.link %} class="selected" {% endif %}>{{ item.name }}</a>
-    </div>
+    <a href="{{ item.link }}" {% if page.url == item.link %} class="selected" {% endif %}>{{ item.name }}</a>
 {% endfor %}
+</nav>
