@@ -1,5 +1,6 @@
 /* Uncomment and set these variables to customize the grid. */
 
+.narrow--grid,
 .grid {
   margin: 0 auto;
   padding: 50px;
@@ -8,6 +9,8 @@
     padding: 30px;
   }
 }
+
+.narrow--grid{max-width: 768px;}
 
 .grid-alt{
   @extend .grid;

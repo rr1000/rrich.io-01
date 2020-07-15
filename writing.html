@@ -22,8 +22,8 @@ body: writing
     <div class="row">
         <div class="col-xs-12">
             <h2>writing</h2>
-            {% for item in site.data.writing %}
-                <p><a href="{{item.link}}" target="_blank">{{item.url}}</a></p>
+            {% for post in site.posts %}
+                <p><a href="{{post.url}}">{{post.year}}: {{post.cleantitle}}</a></p>
             {% endfor %}
         </div>
     </div>
