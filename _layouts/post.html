@@ -16,23 +16,36 @@
       {% seo %}
   </head>
   <body class="{{page.body}}">
-    {% include header.html %}
-    <div class="narrow--grid rr--masthead">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="rr--bc"><a href="/writing">&larr; Blog</a> | {{page.cleantitle}}</div>
-                <h2 class="rr--post-title">{{page.cleantitle}}</h2>
-                <div class="rr--blog-post-header">
-                    <p><span>Published:</span> {{page.year}}</p>
-                    <p><span>Reference:</span> <a href="{{page.reference}}">{{page.reference}}</a></p>
-                    <p><span>Roam Source:</span> <a href="{{page.roam}}">{{page.roam}}</a></p>
-                </div>
-                <div class="rr--markdown">
-                    {{content}}
-                </div>
-            </div>
-        </div>
+    <div class="grid">
+      <div class="row">
+          <header>
+              <div class="col-xs-12">
+                  <a href="/"><img src="/assets/images/logo.png" alt="Logo" class="logo"></a>
+              </div>
+          </header>
+      </div>
+      <div class="row">
+          <div class="col-xs-12 col-sm-2 mobile-shadow mmb-30">
+              <h2>Links</h2>
+              {% include nav.html %}
+          </div>
+          <div class="col-xs-12 col-sm-10 mobile-shadow">
+              <h2 class="blog-title">{{page.cleantitle}}</h2>
+              <p class="published"><span>Published:</span> {{page.year}}</p>
+              <div class="markdown">
+                {{content}}
+              </div>
+          </div>
+      </div>
     </div>
-    {% include footer.html %}
+    <div class="grid">
+      <footer>
+          <div class="row">
+              <div class="col-xs-12">
+                  <p>&copy; 2020 rrich.io | View this website on <a href="https://github.com/">Github</a>.</p>
+              </div>
+          </div>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,42 +1,37 @@
 ---
 layout: base
-title: Ryan is writing.
+title: Writing.
 body: writing
 ---
-<header>
-    <div class="grid">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 start-sm">
-                <div class="rr--logo">
-                    <a href="/"><img src="/assets/images/logo.svg" alt="Logo"></a>
-                    <p>rrich.io</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 end-sm">
-                {% include nav.html %}
-            </div>
-        </div>
-    </div>
-</header>
-<div class="grid rr--masthead">
+<div class="grid">
     <div class="row">
-        <div class="col-xs-12">
-            <h2>writing</h2>
+        <header>
+            <div class="col-xs-12">
+                <a href="/"><img src="/assets/images/logo.png" alt="Logo" class="logo"></a>
+            </div>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 mobile-shadow mmb-30">
+            <h2>Links</h2>
+            {% include nav.html %}
+        </div>
+        <div class="col-xs-12 col-sm-10 mobile-shadow">
+            <h2>Writing</h2>
             {% for post in site.posts %}
-                <p><a href="{{post.url}}">{{post.year}}: {{post.cleantitle}}</a></p>
+                <div class="row work-row">
+                    <div class="col-xs-12 post-title"><span class="year">{{ post.year }}</span> <a href="{{post.url}}">{{ post.cleantitle }}</a></div>
+                </div>
             {% endfor %}
         </div>
     </div>
 </div>
-<footer>
-    <div class="grid">
+<div class="grid">
+    <footer>
         <div class="row">
-            <div class="col-xs-12 col-sm-6 start-xs">
-                <p>Ryan Rich | rrich.io &copy; 2020</p>   
-            </div>
-            <div class="col-xs-12 col-sm-6 end-xs">
-                <a href="mailto:rrichrs@gmail.com">Email</a>
+            <div class="col-xs-12">
+                <p>&copy; 2020 rrich.io | View this website on <a href="https://github.com/">Github</a>.</p>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</div>

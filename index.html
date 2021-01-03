@@ -1,54 +1,45 @@
 ---
 layout: base
-title: Ryan is making software.
+title: Home.
 body: home
 ---
-<header>
-    <div class="grid">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 start-sm">
-                <div class="rr--logo">
-                    <a href="/"><img src="/assets/images/logo.svg" alt="Logo"></a>
-                    <p>rrich.io</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 end-sm">
-                {% include nav.html %}
-            </div>
-        </div>
-    </div>
-</header>
-<div class="grid rr--masthead">
+<div class="grid">
     <div class="row">
-        <div class="col-xs-12 col-sm-5">
-            <h2>about</h2>
-            <p>My name is Ryan Rich. I’m a product and technology leader focused on building meaningful products and high-powered engineering teams.</p>
-            <p>I have a particular focus on privacy, security and regulatory compliance.</p>
-            <p>I’m currently working on a newly funded venture called <a href="https://www.haekka.com">Haekka</a>. Before that, I was the Chief Product Officer at <a href="https://datica.com">Datica</a> where I helped organizations protect healthcare information in the cloud.</p>
-            <p>Before Datica, I co-founded a startup that helped educators streamline their grading process with the assistance of their mobile device. Utilizing optical character recognition technology (way before things like machine learning and AI were cool), I helped college professors drastically improve their grading process, allowing them to spend more time educating.</p>
-            <p>I live in Portland Oregon with my wife, daughter, dog and two cats.</p>
+        <header>
+            <div class="col-xs-12">
+                <a href="/"><img src="/assets/images/logo.png" alt="Logo" class="logo"></a>
+            </div>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 mobile-shadow mmb-30">
+            <h2>Links</h2>
+            {% include nav.html %}
         </div>
-        <div class="col-xs-12 col-sm-7">
-            <h2>work</h2>
+        <div class="col-xs-12 col-sm-10 mobile-shadow">
+            <h2>About</h2>
+            <p>Hello, I'm Ryan — an entrepreneur, engineer, designer, and investor focused on building and growing software companies.</p>
+            <p>My expertise is in privacy, security and regulatory compliance. I'm currently working on <a href="https://www.haekka.com">Haekka</a>, a security training platform designed to meet compliance training requirements for HIPAA, SOC 2, PCI, GDPR, and CCPA. Haekka was created to work entirely in Slack.</p>
+            <p>Before Haekka, I was Chief Product Officer at <a href="https://datica.com">Datica</a> where I helped organizations protect and integrate healthcare information in the cloud. I lead the creation, design and implementation of a secure Kubernetes platform. I also helped grow the company from $0 to $10m in revenue. Datica was acquired in 2019.</p>
+            <p>Before Datica, I co-founded a startup that helped educators streamline their grading process with the assistance of their mobile device. Utilizing optical character recognition technology (way before things like machine learning and AI were cool), I helped college professors drastically improve their grading process, allowing them to spend more time educating.</p>
+            <p>I graduated from <a href="https://www.rit.edu/" target="_blank">R.I.T.</a> in 2013 with a degree in Applied Science.</p>
+            <div class="hr"></div>
+            <h2>Work</h2>
             {% for item in site.data.work %}
-                <div class="rr--work-block">
-                    <p><strong>{{ item.company }}</strong></p>
-                    <p><a href="{{item.link}}" target="_blank">{{item.url}}</a></p>
-                    <p>{{item.description}}</p>
+                <div class="row work-row">
+                    <div class="col-xs-12 col-sm-8 start-sm company"><a href="{{item.link}}" target="_blank">{{ item.company }}</a> <span class="status">{{ item.status }}</span></div>
+                    <div class="col-xs-12 col-sm-4 end-sm position">{{ item.position }}</div>
                 </div>
             {% endfor %}
         </div>
     </div>
 </div>
-<footer>
-    <div class="grid">
+<div class="grid">
+    <footer>
         <div class="row">
-            <div class="col-xs-12 col-sm-6 start-xs">
-                <p>Ryan Rich | rrich.io &copy; 2020</p>   
-            </div>
-            <div class="col-xs-12 col-sm-6 end-xs">
-                <a href="mailto:rrichrs@gmail.com">Email</a>
+            <div class="col-xs-12">
+                <p>&copy; 2020 rrich.io | View this website on <a href="https://github.com/rr1000/rrich.io-01">Github</a>.</p>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</div>

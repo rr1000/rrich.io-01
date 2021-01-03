@@ -3,6 +3,96 @@ layout: base
 title: 2014 YC Startup School Notes // rrich.io
 body: startup
 ---
+<style>
+/* ---------------------------------- */
+/* Startup School Notes */
+/* ---------------------------------- */
+.startup {
+  background-color: #fff;
+  color: #111;
+}
+.startup .light-text {
+  color: #111;
+}
+.startup nav a {
+  color: #111;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.startup .startup-school header {
+  background-color: #efefef;
+  color: #ff6600;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0 0 30px 0;
+}
+.startup .startup-school header h1 {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+.startup .startup-school header p {
+  line-height: 1.4;
+  color: #777;
+}
+.startup .startup-school header p a {
+  color: #111;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.startup .startup-school .speaker-block {
+  margin: 0 0 30px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.startup .startup-school .speaker-block h1 {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+.startup .startup-school .speaker-block h2 {
+  font-size: 16px;
+  color: #777;
+  margin: 0 0 10px 0;
+}
+.startup .startup-school .speaker-block h3 {
+  font-size: 16px;
+  color: #777;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+}
+.startup .startup-school .speaker-block h3 a {
+  color: #ff6600;
+}
+.startup .startup-school h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 5px 0 10px 0;
+}
+.startup .startup-school ul {
+  color: #777;
+}
+.startup .startup-school ul li {
+  list-style: disc outside none;
+  margin: 0 0 5px 20px;
+  line-height: 1.4;
+  color: #777;
+}
+
+.yc-announcement {
+  background-color: #111;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+  padding: 30px;
+}
+.yc-announcement a {
+    color: #999;
+}
+</style>
 <div class="yc-announcement">
 <div class="grid-alt">
     <div class="row">
@@ -14,14 +104,18 @@ body: startup
 </div>
 <div class="grid">
     <div class="row">
-        <div class="col-sm-4 col-xs-12">
-            <p class="light-text">Ryan Rich</p>
-            <nav>
-                <a href="/">Home</a>
-                {% include nav.html %}
-            </nav>
+        <header>
+            <div class="col-xs-12">
+                <a href="/"><img src="/assets/images/logo.png" alt="Logo" class="logo"></a>
+            </div>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 mobile-shadow mmb-30">
+            <h2>Links</h2>
+            {% include nav.html %}
         </div>
-        <div class="col-sm-8 col-xs-12">
+        <div class=" col-xs-12 col-sm-10 mobile-shadow">
             <div class="startup-school">
                 <header>
                     <h1>YC Startup School Live Notes</h1>
