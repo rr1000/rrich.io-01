@@ -4,19 +4,18 @@ title: Writing.
 body: writing
 ---
 <div class="grid">
-    <div class="row">
-        <header>
-            <div class="col-xs-12">
-                <a href="/"><img src="/assets/images/logo.png" alt="Logo" class="logo"></a>
+    <header>
+        <div class="row">
+            <div class="col-xs-2 start-xs">
+                <a href="/"><img src="/assets/images/logo.svg" alt="Logo" class="logo"></a>
             </div>
-        </header>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-2 mobile-shadow mmb-30">
-            <h2>Links</h2>
-            {% include nav.html %}
+            <div class="col-xs-10 end-xs">
+                {% include nav.html %}
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-10 mobile-shadow">
+    </header>
+    <div class="row">
+        <div class="col-xs-12">
             <h2>Writing</h2>
             {% for post in site.posts %}
                 <div class="row work-row">
@@ -26,12 +25,4 @@ body: writing
         </div>
     </div>
 </div>
-<div class="grid">
-    <footer>
-        <div class="row">
-            <div class="col-xs-12">
-                <p>&copy; 2020 rrich.io | View this website on <a href="https://github.com/">Github</a>.</p>
-            </div>
-        </div>
-    </footer>
-</div>
+{% include footer.html %}

@@ -19,9 +19,11 @@ body{
 }
 
 nav{
+  margin: 18px 0 0 0;
   a{
-    display: block;
-    margin: 0 0 15px 0;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    &:hover{color: $c_blue;}
   }
 }
 
@@ -31,7 +33,7 @@ h2{
 }
 
 p{
-  line-height: 1.4;
+  line-height: 1.6;
   margin: 0 0 10px 0;
   a{color: $c_blue;}
 }
@@ -68,11 +70,11 @@ footer{
   border-top: 1px solid lighten($c_gray-1, 30%);
   .grid{padding: 0px;}
   p{
-    padding: 0;
     margin: 0;
     line-height: 1;
     font-size: 14px;
     opacity: 0.75;
+    span{color: $c_gray-2;}
   }
 }
 
@@ -116,7 +118,6 @@ header{
 }
 
 @media all and (max-width: 768px){
-  body{background-color: $c_blue-gray;}
   .mobile-shadow{
     background-color: $c_white;
     padding: 20px;

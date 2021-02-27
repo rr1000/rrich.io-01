@@ -4,22 +4,21 @@ title: Home.
 body: home
 ---
 <div class="grid">
-    <div class="row">
-        <header>
-            <div class="col-xs-12">
-                <a href="/"><img src="/assets/images/logo.png" alt="Logo" class="logo"></a>
+    <header>
+        <div class="row main-header">
+            <div class="col-xs-2 start-xs">
+                <a href="/"><img src="/assets/images/logo.svg" alt="Logo" class="logo"></a>
             </div>
-        </header>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-2 mobile-shadow mmb-30">
-            <h2>Links</h2>
-            {% include nav.html %}
+            <div class="col-xs-10 end-xs">
+                {% include nav.html %}
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-10 mobile-shadow">
+    </header>
+    <div class="row">
+        <div class="col-xs-12">
             <h2>About</h2>
             <p>Hello, I'm Ryan — an entrepreneur, engineer, designer, and investor focused on building and growing software companies.</p>
-            <p>My expertise is in privacy, security and regulatory compliance. I'm currently working on <a href="https://www.haekka.com">Haekka</a>, a security training platform designed to meet compliance training requirements for HIPAA, SOC 2, PCI, GDPR, and CCPA. Haekka was created to work entirely in Slack.</p>
+            <p>My expertise is in privacy, security and regulatory compliance. I'm currently working on <a href="https://www.haekka.com">Haekka</a>, a Slack-based security engagement platform designed to help technology companies build security hygiene into the DNA of their business.</p>
             <p>Before Haekka, I was Chief Product Officer at <a href="https://datica.com">Datica</a> where I helped organizations protect and integrate healthcare information in the cloud. I lead the creation, design and implementation of a secure Kubernetes platform. I also helped grow the company from $0 to $10m in revenue. Datica was acquired in 2019.</p>
             <p>Before Datica, I co-founded a startup that helped educators streamline their grading process with the assistance of their mobile device. Utilizing optical character recognition technology (way before things like machine learning and AI were cool), I helped college professors drastically improve their grading process, allowing them to spend more time educating.</p>
             <p>I graduated from <a href="https://www.rit.edu/" target="_blank">R.I.T.</a> in 2013 with a degree in Applied Science.</p>
@@ -34,12 +33,4 @@ body: home
         </div>
     </div>
 </div>
-<div class="grid">
-    <footer>
-        <div class="row">
-            <div class="col-xs-12">
-                <p>&copy; 2020 rrich.io | View this website on <a href="https://github.com/rr1000/rrich.io-01">Github</a>.</p>
-            </div>
-        </div>
-    </footer>
-</div>
+{% include footer.html %}
