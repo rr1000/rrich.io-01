@@ -1,5 +1,5 @@
-{% for item in site.data.nav %}
-    <nav>
+<nav class="desktop-menu">
+    {% for item in site.data.nav %}
         <a href="{{ item.link }}">{{ item.name }}</a>
-    </nav>
-{% endfor %}
+    {% endfor %}
+</nav>
