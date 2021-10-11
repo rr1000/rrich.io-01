@@ -7,13 +7,13 @@
 body{
   font-family: $f_sans-light;
   font-style: normal;
-  color: $c_black;
-  background-color: $c_white;
+  color: $c_green-text;
+  background-color: $c_green-black;
   font-size: 16px;
   a{
-    color: $c_gray-2;
+    color: $c_green-link;
     text-decoration: none;
-    &:hover{color: lighten($c_gray-2, 10%);}
+    &:hover{color: lighten($c_green-black, 30%);}
   }
   strong{font-family: $f_sans-bold;}
 }
@@ -23,7 +23,7 @@ nav{
   a{
     display: inline-block;
     margin: 0 20px 0 0;
-    &:hover{color: $c_blue;}
+    &:hover{color: lighten($c_green-black, 30%);}
   }
 }
 
@@ -35,14 +35,14 @@ h2{
 p{
   line-height: 1.6;
   margin: 0 0 10px 0;
-  a{color: $c_blue;}
+  a{color: $c_green-link;}
 }
 
 .hr{
   width: 100%;
   height: 1px;
   margin: 20px 0;
-  background-color: lighten($c_gray-1, 30%);
+  background-color: lighten($c_green-black, 10%);
 }
 
 .work-row{
@@ -51,11 +51,11 @@ p{
   div[class*='col-']{
     padding-left: 0;
     padding-right: 0;
-    a{color: $c_blue;&:hover{color: lighten($c_gray-2, 10%);}}
+    a{color: $c_green-link;&:hover{color: lighten($c_green-black, 30%);}}
   }
   .status{
     font-size: 12px;
-    color: $c_gray-1;
+    color: lighten($c_green-black, 30%);
     display: inline-block;
     margin: 0 0 0 10px;
   }
@@ -67,14 +67,14 @@ p{
 
 footer{
   padding: 50px 0 0 0;
-  border-top: 1px solid lighten($c_gray-1, 30%);
+  border-top: 1px solid lighten($c_green-black, 10%);
   .grid{padding: 0px;}
   p{
     margin: 0;
     line-height: 1;
     font-size: 14px;
     opacity: 0.75;
-    span{color: $c_gray-2;}
+    span{color: $c_green-text;}
   }
 }
 
@@ -84,6 +84,7 @@ header{
   img.logo{
     max-width: 50px;
     height: auto;
+    
   }
 }
 
@@ -94,7 +95,7 @@ header{
 
 .published{
   margin: 0 0 30px 0;
-  color: $c_gray-1;
+  color: lighten($c_green-black, 30%);
   font-size: 14px;
 }
 
@@ -102,8 +103,9 @@ header{
   @extend .markdown-body;
   p{
     font-size: 16px;
-    line-height: 1.4;
-    color: $c_gray-2;
+    font-family: $f_sans-light;
+    line-height: 1.6;
+    color: $c_green-text;
     margin: 0 0 10px 0;
     &:last-of-type{margin: 0;}
   }
@@ -114,7 +116,16 @@ header{
   h2{font-size: 18px;}
   h3{font-size: 16px;}
   h4{font-size: 14px; text-transform: uppercase;}
-  h1,h2,h3,h4{margin: 0 0 20px 0;padding: 0; font-family: $f_sans-bold;}
+  h1,h2,h3,h4{margin: 20px 0;padding: 0; font-family: $f_sans-bold;}
+  h3{
+    padding: 20px 0 0 0;
+  }
+  ul{
+    li{
+      color: $c_green-text;
+      font-family: $f_sans-light;
+    }
+  }
 }
 
 @media all and (max-width: 768px){
