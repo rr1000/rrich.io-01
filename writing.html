@@ -1,28 +1,23 @@
 ---
 layout: base
-title: Writing.
+title: Writing » rrich.io
 body: writing
 ---
+<div class="hi"></div>
+{% include left-nav.html %}
 <div class="grid">
-    <header>
+    <div class="content">
+        {% include header.html %}
         <div class="row">
-            <div class="col-xs-2 start-xs">
-                <a href="/"><img src="/assets/images/logo-light.png" alt="Logo" class="logo"></a>
+            <div class="col-xs-12">
+                <h2>Writing</h2>
+                {% for post in site.posts %}
+                    <div class="row work-row">
+                        <div class="col-xs-12 post-title"><span class="year">{{ post.year }}</span> <a href="{{post.url}}">{{ post.cleantitle }}</a></div>
+                    </div>
+                {% endfor %}
             </div>
-            <div class="col-xs-10 end-xs">
-                {% include nav.html %}
-            </div>
-        </div>
-    </header>
-    <div class="row">
-        <div class="col-xs-12">
-            <h2>Writing</h2>
-            {% for post in site.posts %}
-                <div class="row work-row">
-                    <div class="col-xs-12 post-title"><span class="year">{{ post.year }}</span> <a href="{{post.url}}">{{ post.cleantitle }}</a></div>
-                </div>
-            {% endfor %}
         </div>
     </div>
+    {% include footer.html %}
 </div>
-{% include footer.html %}

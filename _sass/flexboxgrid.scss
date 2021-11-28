@@ -3,11 +3,8 @@
 .narrow--grid,
 .grid {
   margin: 0 auto;
-  padding: 50px;
-  max-width: 600px;
-  @media all and (max-width: 768px){
-    padding: 30px;
-  }
+  padding: 50px 50px 50px 95px;
+  max-width: 675px;
 }
 
 .narrow--grid{max-width: 768px;}

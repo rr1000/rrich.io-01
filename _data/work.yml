@@ -1,20 +1,20 @@
 - company: Haekka
   link: https://www.haekka.com
   position: "CTO & Co-founder"
-  status: VC Backed, Operating
-- company: Product Kaiju
+  status: VC, Operating
+- company: rrich.io
   link: ""
   position: Founder
-  status: Consultancy, Operating
+  status: Operating
 - company: Datica
   link: https://datica.com
   position: "Chief Product Officer"
-  status: VC Backed, Acquired
-- company: Global Thinking (More Vang)
+  status: VC, Acquired
+- company: Global Thinking
   link: https://morevang.com
-  position: "Frontend Developer"
-  status: Independent, Operating
+  position: "Software Developer"
+  status: Operating
 - company: GradeSnap
-  link: ""
+  link: "#"
   position: "Co-founder"
-  status: VC Backed, Failed
+  status: VC, Failed
