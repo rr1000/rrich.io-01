@@ -182,7 +182,7 @@ footer{
           height: 20px;
           width: 40px;
           background-color: $c_white;
-          background: linear-gradient(270deg, $c_white 0%, transparent);
+          background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 76.25%);
           position: absolute;
           right: 0;
           top: 0;
@@ -254,7 +254,7 @@ body.dark-mode{
     .writing-list{
       .work-row{
           &::after {
-            background: linear-gradient(270deg, $c_dark-bg 0%, transparent);
+            background: linear-gradient(270deg, #181818 0%, rgba(24, 24, 24, 0) 76.25%);
           }
       }
     }
