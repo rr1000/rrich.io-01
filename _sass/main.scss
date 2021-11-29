@@ -18,6 +18,7 @@ body{
   }
   strong{font-family: $f_sans-bold;}
 }
+
 .hi{
   width: 100%;
   position: fixed;
@@ -27,6 +28,7 @@ body{
   height: 5px;
   background: linear-gradient(90.03deg, #FFC046 0%, #FF8F72 50.24%, #7833FF 100%);
 }
+
 .left-nav{
   position: fixed;
   width: 45px;
@@ -42,7 +44,9 @@ body{
   .socials{
     margin: 50px 0;
   }
+  .switch,
   a{
+    cursor: pointer;
     display: block;
     margin: 0 0 10px 0;
     padding: 10px;
@@ -62,6 +66,7 @@ body{
     }
   }
 }
+
 .content{
   h2{
     font-family: $f_sans-bold;
@@ -149,6 +154,7 @@ body{
     }
   }
 }
+
 footer{
   margin: 20px 0 0 0;
   padding: 20px 0 0 0;
@@ -160,4 +166,97 @@ footer{
 }
 .marg-auto{
   margin: 0 auto;
+}
+
+@media only all and (max-width: 550px) {
+  .writing-list{
+    .work-row{
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        position: relative;
+        &::after {
+          content: " ";
+          height: 20px;
+          width: 40px;
+          background-color: $c_white;
+          background: linear-gradient(270deg, $c_white 0%, transparent);
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          height: 100%;
+        }
+    }
+  }
+  .left-nav{
+    padding: 15px 0px 0px 0px;
+    width: 45px;
+  }
+}
+
+body.dark-mode{
+  background-color: $c_dark-bg;
+  color: $c_white;
+  a{color: $c_blue-light;}
+  p{color: $c_body-text-dark;}
+  .work-row{
+    .position{
+      background-color: lighten($c_dark-bg, 10%);
+      text-align: left;
+      color: $c_body-text-dark;
+      border-radius: 5px;
+      width: none;
+    }
+    a{color: $c_blue-light;}
+  }
+  .content{
+    header{
+      .desktop-menu{
+        a{
+          background-color: lighten($c_dark-bg, 2%);
+          border: 1px solid lighten($c_dark-bg, 8%);
+          color: $c_blue-light;
+          &:hover{
+            background: lighten($c_dark-bg, 5%);
+            transition: all 250ms ease;
+            color: lighten($c_purple, 15%);
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+          }
+        }
+      }
+    }
+  }
+  .left-nav{
+    background-color: lighten($c_dark-bg, 2%);
+    border-right: 1px solid lighten($c_dark-bg, 8%);
+    .switch,
+    a{
+      transition: all 250ms ease;
+      &:hover{
+        background-color: $c_dark-bg;
+        transition: all 250ms ease;
+        span.link{
+          transition: all 250ms ease;
+        }
+      }
+      .logo-svg{
+        filter: brightness(65%) contrast(200%);
+      }
+      .svg-icons{
+        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(60%) contrast(100%);
+      }
+    }
+  }
+  @media only all and (max-width: 550px) {
+    .writing-list{
+      .work-row{
+          &::after {
+            background: linear-gradient(270deg, $c_dark-bg 0%, transparent);
+          }
+      }
+    }
+  }
 }

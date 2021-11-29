@@ -45,3 +45,11 @@
     height: auto;
   }
 }
+
+body.dark-mode{
+  .markdown-body{
+    ol,li{
+      color: $c_body-text-dark;
+    }
+  }
+}
