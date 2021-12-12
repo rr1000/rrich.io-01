@@ -155,6 +155,50 @@ body{
   }
 }
 
+form{
+  padding: 20px;
+  border-radius: 10px;
+  background: $c_gray-4;
+  border: 1px solid lighten($c_gray-3, 5%);
+  label{
+    display: block;
+    margin: 0 0 10px 0;
+    font-family: $f_sans-reg;
+    color: $c_body-text;
+  }
+  input{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $c_gray-5;
+    box-sizing: border-box;
+  }
+  .form-group{
+    margin: 0 0 20px 0;
+  }
+  button{
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    color: darken(#FF8F72, 60%);
+    font-size: 16px;
+    font-family: $f_sans-reg;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: 0;
+    transition: all 250ms ease;
+    background: linear-gradient(90.03deg, #FFC046 0%, #FF8F72 100%);
+    cursor: pointer;
+      &:hover{
+        transition: all 250ms ease;
+        background: linear-gradient(90.03deg, darken(#FFC046, 10%) 0%, darken(#FF8F72, 10%) 100%);
+      }
+  }
+}
+
 footer{
   margin: 20px 0 0 0;
   padding: 20px 0 0 0;
@@ -174,6 +218,12 @@ footer{
       .position{
         margin: 10px 0 0 0;
       }
+    }
+  }
+  form{
+    button{
+      max-width: 100%;
+      width: 100%;
     }
   }
 }
@@ -213,6 +263,21 @@ body.dark-mode{
   color: $c_white;
   a{color: $c_blue-light;}
   p{color: $c_body-text-dark;}
+  form{
+    background-color: lighten($c_dark-bg, 2%);
+    border: 1px solid lighten($c_dark-bg, 8%);
+    label{
+      color: $c_white;
+    }
+    input{
+      border: 1px solid lighten($c_dark-bg, 8%);
+      background-color: $c_dark-bg;
+      color: $c_white;
+    }
+    .form-group{
+      margin: 0 0 20px 0;
+    }
+  }
   .work-row{
     .position{
       background-color: lighten($c_dark-bg, 10%);
