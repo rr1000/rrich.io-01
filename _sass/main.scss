@@ -30,7 +30,7 @@ body{
 }
 
 .logo{
-  max-width: 50px;
+  max-width: 38px;
   display: block;
   img{
     max-width: 100%;
@@ -48,7 +48,6 @@ body{
   bottom: 0;
   text-align: center;
   z-index: 100;
-  border-right: 1px solid lighten($c_gray-3, 5%);
   .socials{
     margin: 50px 0;
   }
@@ -77,19 +76,21 @@ body{
 
 .content{
   h2{
-    font-family: $f_sans-bold;
+    font-family: $f_sans-light;
     margin: 0 0 10px 0;
     font-size: 20px;
+    opacity: 0.5;
   }
   p{
     margin: 0 0 20px 0;
     color: $c_body-text;
     a{
       transition: all 250ms ease;
-      color: $c_blue;
+      color: $c_black;
+      text-decoration: underline;
       &:hover{
         transition: all 250ms ease;
-        color: $c_purple;
+        color: $c_gray-2;
       }
     }
   }
@@ -97,32 +98,25 @@ body{
     margin: 0 0 50px 0;
     .desktop-menu{
       a{
-        padding: 5px 10px;
-        background: $c_gray-4;
         transition: all 250ms ease;
-        border-radius: 5px;
-        margin: 0 0 0 20px;
-        transition: all 250ms ease;
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.0);
-        border: 1px solid lighten($c_gray-3, 5%);
-        color: $c_blue;
+        color: $c_black;
+        text-decoration: underline;
         &:hover{
-          background: #fff;
           transition: all 250ms ease;
-          color: $c_purple;
-          box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+          color: $c_gray-2;
         }
       }
     }
   }
   .work-row{
-    padding: 10px 1rem;
+    padding: 0 0 5px 1rem;
     a{
       transition: all 250ms ease;
-      color: $c_blue;
+      color: $c_black;
+      text-decoration: underline;
       &:hover{
         transition: all 250ms ease;
-        color: $c_purple;
+        color: $c_gray-2;
       }
     }
     .year,
@@ -136,6 +130,13 @@ body{
     }
     [class*="col-"]{
       padding: 0;
+    }
+    .years{
+      font-size: 12px;
+      display: inline-block;
+      text-align: left;
+      color: $c_gray-2;
+      width: none;
     }
     .position{
       font-size: 12px;
@@ -227,6 +228,9 @@ footer{
         margin: 10px 0 0 0;
       }
     }
+    .mobile-display-none{
+      display: none;
+    }
   }
   form{
     button{
@@ -269,8 +273,8 @@ footer{
 body.dark-mode{
   background-color: $c_dark-bg;
   color: $c_white;
-  a{color: $c_blue-light;}
-  p{color: $c_body-text-dark;}
+  a{color: $c_white;}
+  p{color: $c_gray-1;}
   form{
     background-color: lighten($c_dark-bg, 2%);
     border: 1px solid lighten($c_dark-bg, 8%);
@@ -294,20 +298,15 @@ body.dark-mode{
       border-radius: 5px;
       width: none;
     }
-    a{color: $c_blue-light;}
+    a{color: $c_white;}
   }
   .content{
     header{
       .desktop-menu{
         a{
-          background-color: lighten($c_dark-bg, 2%);
-          border: 1px solid lighten($c_dark-bg, 8%);
-          color: $c_blue-light;
+          color: $c_white;
           &:hover{
-            background: lighten($c_dark-bg, 5%);
-            transition: all 250ms ease;
-            color: lighten($c_purple, 15%);
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            color: $c_gray-2;
           }
         }
       }
@@ -315,7 +314,6 @@ body.dark-mode{
   }
   .left-nav{
     background-color: lighten($c_dark-bg, 2%);
-    border-right: 1px solid lighten($c_dark-bg, 8%);
     .switch,
     a{
       transition: all 250ms ease;

@@ -1,20 +1,25 @@
 - company: Haekka
+  years: "2022 - Present"
   link: https://www.haekka.com
   position: "CTO & Co-founder"
   status: VC, Operating
 - company: rrich.io
+  years: "2022 - Present"
   link: ""
   position: Founder
   status: Operating
 - company: Datica
+  years: "2014 - 2019"
   link: https://datica.com
   position: "Chief Product Officer"
   status: VC, Acquired
 - company: Global Thinking
+  years: "2013 - 2014"
   link: https://morevang.com
   position: "Software Developer"
   status: Operating
 - company: GradeSnap
+  years: "2011 - 2013"
   link: "#"
   position: "Co-founder"
   status: VC, Failed

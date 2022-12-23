@@ -18,8 +18,9 @@ body: home
                 <h2>Work</h2>
                 {% for item in site.data.work %}
                     <div class="row work-row">
-                        <div class="col-xs-12 col-sm-8 start-sm company"><a href="{{item.link}}" target="_blank">{{ item.company }}</a> <span class="status">{{ item.status }}</span></div>
-                        <div class="col-xs-12 col-sm-4 end-sm"><div class="position">{{ item.position }}</div></div>
+                        <div class="col-xs-4 col-sm-2 start-sm"><div class="years">{{ item.years }}</div></div>
+                        <div class="col-xs-8 col-sm-5 start-sm company"><a href="{{item.link}}" target="_blank">{{ item.company }}</a> <span class="status">{{ item.status }}</span></div>
+                        <div class="col-xs-12 col-sm-5 end-sm mobile-display-none"><div class="position">{{ item.position }}</div></div>
                     </div>
                 {% endfor %}
             </div>
