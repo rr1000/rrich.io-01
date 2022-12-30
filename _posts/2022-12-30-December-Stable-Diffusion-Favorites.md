@@ -8,6 +8,8 @@ roam: "#"
 
 I have compiled a selection of 16 images that I have generated this month that I am particularly pleased with in terms of the outcome. Many of the prompts used to generate these images were inspired by Eastern European cinema.
 
+![AI Collage](/assets/images/posts/ai-collage.png)
+
 ![AI Image 01](/assets/images/posts/ai-12-01.png)
 
 ![AI Image 02](/assets/images/posts/ai-12-02.png)
