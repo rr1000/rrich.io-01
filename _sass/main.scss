@@ -75,6 +75,19 @@ body{
   }
 }
 
+.home-image{
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+figcaption{
+  font-size: 12px;
+  color: $c_gray-1;
+  // text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
 .content{
   a.latest-post{
     background-color: lighten($c_green-ish, 50%);
