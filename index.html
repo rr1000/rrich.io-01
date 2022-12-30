@@ -9,6 +9,21 @@ body: home
         {% include header.html %}
         <div class="row">
             <div class="col-xs-12">
+                <h2>Latest Post</h2>
+                {% for post in site.posts limit:1 %}
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="{{post.url}}" class="latest-post">
+                            <h1>{{ post.cleantitle }}</h1>
+                            <p>{{ post.excerpt }}</p>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
                 <h2>About</h2>
                 <p>Hello, I'm Ryan — an entrepreneur, engineer, and designer focused on building and growing software companies.</p>
                 <p>My expertise lies at the intersections of privacy, security, regulatory compliance, and software design. I'm currently working on <a href="https://www.haekka.com" target="_blank">Haekka</a>, a training platform designed to meet requirements for HIPAA, SOC 2, PCI, GDPR, CCPA, and everything in between. Haekka was created to work entirely in Slack.</p>

@@ -8,7 +8,7 @@ roam: "#"
 
 Isn't it delightful that we can now rely on AI to do all our coding for us? No longer do we have to worry about those pesky coding problems — just let the machines take care of it!
 
-...I wouldn't get too excited just yet. You still need to know how to run, deploy, and make changes to the code. Then again, that will all become obsolete soon enough I suppose. Just imagine, a non-technical but savvy founder could create an MVP entirely with an [AI coding tool](https://debuild.app/). How convenient.
+...I wouldn't get too excited just yet. You still need to know how to run, deploy, and make changes to the code. Then again, that will all become obsolete soon enough I suppose. Just imagine, a non-technical but savvy founder could create an MVP entirely with an [AI coding tool](https://debuild.app/). How convenient. 
 
 While not an AI coding tool specifically, as a general purpose AI tool, [ChatGPT](https://chat.openai.com/chat) can produce decent code right out of the box. Additionally, given ChatGPT's "chat" like nature, it's easy to ask follow up questions and debug simply by asking ChatGPT to fix an issue. I've found ChatGPT to be quite successful at two primary coding tasks. 1.) app generation, and 2.) simple script writing.
 

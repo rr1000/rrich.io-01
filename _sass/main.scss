@@ -76,6 +76,32 @@ body{
 }
 
 .content{
+  a.latest-post{
+    background-color: lighten($c_green-ish, 50%);
+    display: block;
+    padding: 16px;
+    border-radius: 6px;
+    color: $c_green-ish;
+    margin: 0 0 20px 0;
+    border: 1px solid lighten($c_green-ish, 30%);
+    transition: all 250ms ease;
+    &:hover{
+      transition: all 250ms ease;
+      background-color: lighten($c_green-ish, 45%);
+      border: 1px solid lighten($c_green-ish, 20%);
+    }
+    h1{
+      font-size: 14px;
+      font-family: $f_sans-bold;
+      color: $c_green-ish;
+    }
+    p{
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      font-size: 14px;
+      color: $c_green-ish;
+    }
+  }
   h2{
     font-family: $f_sans-light;
     margin: 0 0 10px 0;
@@ -302,6 +328,22 @@ body.dark-mode{
     a{color: $c_white;}
   }
   .content{
+    a.latest-post{
+      background-color: darken($c_green-ish, 25%);
+      border: 1px solid darken($c_green-ish, 5%);
+      transition: all 250ms ease;
+      &:hover{
+        transition: all 250ms ease;
+        background-color: darken($c_green-ish, 30%);
+        border: 1px solid darken($c_green-ish, 10%);
+      }
+      h1{
+        color: lighten($c_green-ish, 40%);
+      }
+      p{
+        color: lighten($c_green-ish, 25%);
+      }
+    }
     header{
       .desktop-menu{
         a{
