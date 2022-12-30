@@ -12,6 +12,11 @@
 
 .markdown-body{
   font-size: 16px;
+  blockquote{
+    padding-left: 20px;
+    border-left: 2px solid $c_gray-2;
+    font-family: $f_sans-italic;
+  }
   p{
     color: $c_body-text;
   }
@@ -28,6 +33,9 @@
   }
   ul, ol{
     margin-bottom: 20px;
+  }
+  em{
+    font-family: $f_sans-italic;
   }
   ol,li{
     list-style: disc;
@@ -51,6 +59,11 @@ body.dark-mode{
   .markdown-body{
     ol,li{
       color: $c_body-text-dark;
+    }
+    blockquote{
+      p{
+        color: $c_white;
+      }
     }
   }
 }
