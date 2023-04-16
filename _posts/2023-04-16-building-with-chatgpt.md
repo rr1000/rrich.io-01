@@ -1,12 +1,12 @@
 ---
-cleantitle: "Building Applications with ChatGPT for People Who Know Enough Code to Be Dangerous"
+cleantitle: "Building with ChatGPT"
 layout: post
 year: 2023
 reference: "#"
 roam: "#"
 ---
 
-In this blog post, I will guide intermediate programmers who are familiar with coding but want to learn how to build applications using ChatGPT effectively. Follow the steps below to create a solid foundation for your application development process.
+In this blog post, I will guide "people who know enough coding to be dangerous" on build applications using ChatGPT. Follow the steps below to create a solid foundation for your application development process.
 
 ### Choose a Framework and Learn the Basics:
 

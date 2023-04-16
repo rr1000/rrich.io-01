@@ -9,6 +9,12 @@ body: home
         {% include header.html %}
         <div class="row">
             <div class="col-xs-12">
+                <img src="/assets/images/home-02.png" alt="Home Image" class="home-image">
+                <figcaption>Image generated with Midjourney v5</figcaption>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
                 <h2>Latest Post</h2>
                 {% for post in site.posts limit:1 %}
                 <div class="row">
