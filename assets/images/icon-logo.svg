@@ -1,9 +1,0 @@
-<svg width="120" height="75" viewBox="0 0 120 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="47.5" width="25" height="5" rx="2.5" transform="rotate(90 47.5 0)" fill="#8C8C8C"/>
-<rect x="62.5" width="25" height="5" rx="2.5" transform="rotate(90 62.5 0)" fill="#8C8C8C"/>
-<rect x="77.5" width="25" height="5" rx="2.5" transform="rotate(90 77.5 0)" fill="#8C8C8C"/>
-<rect y="35" width="120" height="5" rx="2.5" fill="#8C8C8C"/>
-<rect x="47.5" y="50" width="25" height="5" rx="2.5" transform="rotate(90 47.5 50)" fill="#8C8C8C"/>
-<rect x="62.5" y="50" width="25" height="5" rx="2.5" transform="rotate(90 62.5 50)" fill="#8C8C8C"/>
-<rect x="77.5" y="50" width="25" height="5" rx="2.5" transform="rotate(90 77.5 50)" fill="#8C8C8C"/>
-</svg>

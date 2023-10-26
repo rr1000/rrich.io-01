@@ -5,8 +5,7 @@ year: 2023
 reference: "#"
 roam: "#"
 ---
-
-The following is an unedited conversation I had recently had with ChatGPT.
+The following is an unedited conversation I recently had with ChatGPT.
 
 **User:** I have 100 unique playing cards.
 
@@ -14,9 +13,9 @@ Two people are randomly shuffling these cards until they both have the exact sam
 
 Given how many combinations are possible from 100 unique cards, how many times would the two people have to randomly shuffle until the both had matching sets of cards? 
 
-**ChatGPT:** The total number of combinations that can be made from 100 unique cards is given by the factorial of 100, represented as 100!. This number is incredibly large, approximately 9.3 x 10^157.
+**ChatGPT:** The total number of combinations that can be made from 100 unique cards is given by the factorial of 100, represented as 100!. This number is incredibly large, approximately `9.3 x 10^157`.
 
-The concept you're asking about is similar to the "birthday paradox," but instead of 365 days, we have 100! possible combinations. However, with 100! combinations, even if the two people shuffled the deck a billion (10^9) times a second for the entire age of the universe (roughly 13.8 billion years or approximately 4.3 x 10^17 seconds), they would still be incredibly unlikely to hit the same combination.
+The concept you're asking about is similar to the "birthday paradox," but instead of 365 days, we have 100! possible combinations. However, with 100! combinations, even if the two people shuffled the deck a billion (`10^9`) times a second for the entire age of the universe (roughly 13.8 billion years or approximately `4.3 x 10^17` seconds), they would still be incredibly unlikely to hit the same combination.
 
 The exact number of shuffles required for them to have a reasonable chance (say, 50%) of getting the same order is so large that it's practically incomprehensible. The universe would likely end due to heat death or the Big Rip long before they had a reasonable chance of getting the same card order.
 
@@ -25,11 +24,11 @@ The exact number of shuffles required for them to have a reasonable chance (say,
 
 Given this, would the two people be able to get the same order if they somehow found a way to survive amongst black holes in a complete dark, but still existing universe? 
 
-**ChatGPT:** The current understanding is that the universe will continue to exist for an incredibly long time, far beyond when the last stars have faded out. However, it's important to understand just how big 100! is. It's around 9.3 x 10^157, which is a number so large that there aren't enough particles in the known universe to even begin to represent it.
+**ChatGPT:** The current understanding is that the universe will continue to exist for an incredibly long time, far beyond when the last stars have faded out. However, it's important to understand just how big 100! is. It's around `9.3 x 10^157`, which is a number so large that there aren't enough particles in the known universe to even begin to represent it.
 
-Even if our two people shuffled a billion (10^9) times a second for a trillion (10^12) years, that's only about 3.15 x 10^31 shuffles - an astronomically tiny fraction of 100!.
+Even if our two people shuffled a billion (`10^9`) times a second for a trillion (`10^12`) years, that's only about `3.15 x 10^31` shuffles - an astronomically tiny fraction of 100!.
 
-Even extending this to a googol (10^100) years, which is an incredibly long time and vastly exceeds the currently predicted lifespan of the universe, it's still not enough. It would be 3.15 x 10^119 shuffles, still significantly smaller than 100!.
+Even extending this to a googol (`10^100`) years, which is an incredibly long time and vastly exceeds the currently predicted lifespan of the universe, it's still not enough. It would be `3.15 x 10^119` shuffles, still significantly smaller than 100!.
 
 So while it's theoretically possible that they could both shuffle into the same order, the odds are so incredibly small that it's virtually impossible. It's a bit like asking if a monkey randomly typing on a typewriter could reproduce the complete works of Shakespeare. Theoretically, yes, but practically, no.
 
@@ -37,11 +36,11 @@ As a result, even if they were somehow able to survive in a universe composed en
 
 **User:** What are the odds they hit the exact order of each other on the first time they shuffle? 
 
-**ChatGPT:** The odds of two people shuffling 100 unique cards and both ending up with the exact same order on the first try is incredibly low. With 100 unique cards, there are 100! (or factorial of 100) possible orders, which is approximately 9.33 x 10^157.
+**ChatGPT:** The odds of two people shuffling 100 unique cards and both ending up with the exact same order on the first try is incredibly low. With 100 unique cards, there are 100! (or factorial of 100) possible orders, which is approximately `9.33 x 10^157`.
 
-So, the odds of both shuffles landing on the same one of these orders on the first try is 1 in 100!, or approximately 1 in 9.33 x 10^157.
+So, the odds of both shuffles landing on the same one of these orders on the first try is 1 in 100!, or approximately 1 in `9.33 x 10^157`.
 
-To give you an idea of just how large this number is, it's much, much greater than the estimated number of atoms in the observable universe, which is about 10^80.
+To give you an idea of just how large this number is, it's much, much greater than the estimated number of atoms in the observable universe, which is about `10^80`.
 
 So the probability is effectively zero. It's so unlikely to happen by chance that it's virtually impossible.
 
@@ -49,11 +48,11 @@ So the probability is effectively zero. It's so unlikely to happen by chance tha
 
 **ChatGPT:** Quantum computers offer a new kind of computation and can perform certain calculations much faster than traditional computers. However, even the most powerful quantum computers that we can conceive of would struggle to fully simulate this scenario.
 
-The number of possible orders of 100 unique cards is 100!, which is approximately 9.33 x 10^157. This number is incredibly large. For comparison, the number of atoms in the observable universe is estimated to be around 10^80, which is far less.
+The number of possible orders of 100 unique cards is 100!, which is approximately `9.33 x 10^157`. This number is incredibly large. For comparison, the number of atoms in the observable universe is estimated to be around `10^80`, which is far less.
 
 While quantum computers can theoretically represent and manipulate an exponentially large number of states thanks to the principle of superposition, we're currently nowhere near the level of having a quantum computer capable of simulating that many states.
 
-As of my knowledge cut-off in September 2021, the largest quantum computers have on the order of 50-100 qubits. Every additional qubit doubles the potential number of states the computer can simultaneously represent, so a quantum computer with n qubits can represent 2^n states. To represent 100! states would therefore need a quantum computer with log2(100!) qubits. This is far beyond our current capabilities, and likely will be for a considerable time.
+As of my knowledge cut-off in September 2021, the largest quantum computers have on the order of 50-100 qubits. Every additional qubit doubles the potential number of states the computer can simultaneously represent, so a quantum computer with n qubits can represent `2^n` states. To represent 100! states would therefore need a quantum computer with `log2(100!)`` qubits. This is far beyond our current capabilities, and likely will be for a considerable time.
 
 Furthermore, there's a difference between being able to represent a large number of states (which quantum computers can theoretically do) and being able to perform useful computations on those states, which would be required to simulate the scenario you're asking about. The issue of "quantum decoherence" poses significant challenges to maintaining and manipulating a large number of quantum states.
 
@@ -65,7 +64,7 @@ So, while quantum computers hold a lot of promise, they're not a magic bullet th
 
 Four-dimensional space or folding refers to a geometrical concept, primarily used in theoretical physics, which includes an additional spatial dimension beyond the normal three dimensions (length, width, and height). It is used in theories like string theory and is a key element in ideas like wormholes. However, this doesn't have a direct application on the statistical problem of shuffling cards.
 
-The statistical problem here is the sheer enormity of possible outcomes when shuffling 100 unique cards, which is 100 factorial (roughly 9.33 x 10^157). Even with incredibly fast shuffling and a practically infinite amount of time, the odds of two independent shuffles producing the exact same order is extremely small.
+The statistical problem here is the sheer enormity of possible outcomes when shuffling 100 unique cards, which is 100 factorial (roughly `9.33 x 10^157`). Even with incredibly fast shuffling and a practically infinite amount of time, the odds of two independent shuffles producing the exact same order is extremely small.
 
 There's not really a "solution" to this problem in the sense of finding a way to make it likely that they'll shuffle into the same order. It's simply a case where the number of possibilities is so large that, for all practical purposes, it's impossible for two people to independently shuffle into the same order of cards.
 
@@ -97,13 +96,13 @@ So they shuffle 100 cards, 100 times each, and each time, they get the same orde
 
 What is the probability of such a scenario? 
 
-**ChatGPT:** The odds of two people shuffling 100 unique cards and getting the same order on a single try is approximately 1 in 100!, or about 1 in 9.33 x 10^157.
+**ChatGPT:** The odds of two people shuffling 100 unique cards and getting the same order on a single try is approximately 1 in 100!, or about 1 in `9.33 x 10^157`.
 
 If you want both people to get the same order 100 times in a row, you would multiply this probability by itself 100 times, which is equivalent to raising it to the power of 100.
 
-The result is (1 / 9.33 x 10^157)^100 which equals approximately 1 in (9.33 x 10^157)^100.
+The result is `(1 / 9.33 x 10^157)^100` which equals approximately 1 in `(9.33 x 10^157)^100`.
 
-This is an extraordinarily large number - it has 15,800 digits. For comparison, the estimated number of atoms in the observable universe is about 10^80, which has only 81 digits.
+This is an extraordinarily large number - it has 15,800 digits. For comparison, the estimated number of atoms in the observable universe is about `10^80`, which has only 81 digits.
 
 This number is so big that it's beyond our capability to fully comprehend. So while it's theoretically possible, it's so unlikely that it's virtually impossible in practice. In other words, the chances are essentially zero.
 
@@ -119,9 +118,9 @@ In essence, asking for the number of strings in the universe is a bit like askin
 
 **User:** I’m trying to wrap my head around the fact that there can be a number that’s larger than the number of the fundamental building blocks of the universe (atoms). It seems like it would be a fundamental law that cannot be broken. 
 
-**ChatGPT:** Numbers and mathematical concepts aren't bound by physical limitations. We can easily define and work with numbers that are vastly larger than the estimated number of atoms in the observable universe, which is about 10^80.
+**ChatGPT:** Numbers and mathematical concepts aren't bound by physical limitations. We can easily define and work with numbers that are vastly larger than the estimated number of atoms in the observable universe, which is about `10^80`.
 
-When we talk about the factorial of 100, for example (approximately 9.33 x 10^157), we're not saying that there are that many of something concrete in the universe. Rather, we're talking about the number of ways to arrange 100 unique items, which is a concept that exists independently of any physical constraints.
+When we talk about the factorial of 100, for example (approximately `9.33 x 10^157`), we're not saying that there are that many of something concrete in the universe. Rather, we're talking about the number of ways to arrange 100 unique items, which is a concept that exists independently of any physical constraints.
 
 This can certainly be a difficult idea to grapple with. When we think about numbers in the context of quantities of things, it seems like there should be a maximum number that corresponds to the total number of the smallest things in the universe. But when numbers are used to represent concepts like arrangements or probabilities, they aren't constrained in the same way.
 
@@ -149,7 +148,7 @@ It's an intriguing thought experiment to consider what could be done in a univer
 
 While this concept might suggest that a person could survive indefinitely, thus giving them infinite attempts to match the card shuffle, it's important to note a few things. First, quantum immortality is purely speculative and not supported by empirical evidence.
 
-Secondly, even if we grant quantum immortality and the potential for infinite shuffles, the same statistical principles apply: while it's technically possible for the two people to eventually shuffle the deck in the same order, the probability is extremely small. Given the vast number of possible combinations (100 factorial, or around 9.33 x 10^157), it would still likely take an unimaginably long time for this event to occur.
+Secondly, even if we grant quantum immortality and the potential for infinite shuffles, the same statistical principles apply: while it's technically possible for the two people to eventually shuffle the deck in the same order, the probability is extremely small. Given the vast number of possible combinations (100 factorial, or around `9.33 x 10^157`), it would still likely take an unimaginably long time for this event to occur.
 
 Finally, remember that the many-worlds interpretation suggests all possibilities occur somewhere. So in most universes, they won't shuffle the deck into the same order within a human lifetime, but in a very small fraction of universes, they might. This doesn't change the odds in any specific universe, including the one we're in.
 
@@ -165,11 +164,11 @@ How long would it take the 2 people to shuffle the cards and get the same order 
 
 Assume we have the two immortal people shuffling the cards as fast as they can (let's say one shuffle per second for simplicity), and they're so close to a black hole that for every 1 minute that passes for them, 10 years pass for the observer on Earth.
 
-This effectively means they're shuffling the deck faster from the perspective of the observer. But, the total number of unique permutations of the deck, which is 100 factorial (~9.33 x 10^157), remains the same.
+This effectively means they're shuffling the deck faster from the perspective of the observer. But, the total number of unique permutations of the deck, which is 100 factorial `(~9.33 x 10^157)`, remains the same.
 
 Even if they can perform one shuffle per second (observed as approximately 630,720,000 shuffles per minute from the Earth due to time dilation), the expected time to get through all possible permutations would still be extraordinarily large.
 
-Let's calculate that time. 9.33 x 10^157 permutations divided by 630,720,000 shuffles per minute gives us approximately 1.48 x 10^149 minutes. That's still an unimaginably long time, even when taking into account the time dilation.
+Let's calculate that time. `9.33 x 10^157` permutations divided by 630,720,000 shuffles per minute gives us approximately 1.48 x 10^149 minutes. That's still an unimaginably long time, even when taking into account the time dilation.
 
 So, even with time dilation allowing them to shuffle the deck incredibly rapidly from the observer's perspective, the time required to shuffle into the same order still exceeds the current age of the universe by an astronomical amount.
 
@@ -179,7 +178,7 @@ These estimates are also based on the assumption that they would necessarily hit
 
 How would one go about ensuring that the 2 people get the same order at least one time in their 80 years of existence? 
 
-**ChatGPT:** Given the enormous number of possible arrangements for a 100-card deck (100 factorial, which is approximately 9.33 x 10^157), the probability that two people will independently shuffle their decks into the same order even once in their lifetimes is, for all practical purposes, effectively zero.
+**ChatGPT:** Given the enormous number of possible arrangements for a 100-card deck (100 factorial, which is approximately `9.33 x 10^157`), the probability that two people will independently shuffle their decks into the same order even once in their lifetimes is, for all practical purposes, effectively zero.
 
 The challenge is not something that can be overcome by shuffling faster or living longer. Even if the two people shuffled a deck once every second for 80 years, they wouldn't come anywhere close to going through all the possible arrangements.
 
@@ -201,9 +200,9 @@ This means we're looking for the number n such that the total number of permutat
 
 While there isn't a simple formula to solve this equation directly, we can use an approximation for factorials called Stirling's approximation:
 
-n! ≈ √(2πn) * (n/e)^n
+> n! ≈ √(2πn) * (n/e)^n
 
-We can solve the equation 100 * 252,460,800 = n! using this approximation. However, the factorial function increases extremely rapidly, so it's likely that the number of cards would be quite small. In fact, even for 10 cards (10!), there are already 3,628,800 different permutations, which is already more than the number of shuffles that can be done in a year at a rate of one shuffle every 10 seconds.
+We can solve the equation `100 * 252,460,800 = n!` using this approximation. However, the factorial function increases extremely rapidly, so it's likely that the number of cards would be quite small. In fact, even for 10 cards (10!), there are already 3,628,800 different permutations, which is already more than the number of shuffles that can be done in a year at a rate of one shuffle every 10 seconds.
 
 Given this, it's likely that even with a deck of 10 or fewer cards, the chance of two people independently shuffling into the same order at least once in 80 years would still be considerably less than 1%.
 
@@ -217,16 +216,17 @@ We are searching for a number n such that n! is roughly equal to 100 times the t
 
 Calculating factorials for small numbers, we get:
 
-5! = 120
-6! = 720
-7! = 5,040
-8! = 40,320
-9! = 362,880
-10! = 3,628,800
-11! = 39,916,800
-12! = 479,001,600
-13! = 6,227,020,800
-14! = 87,178,291,200
+- 5! = 120
+- 6! = 720
+- 7! = 5,040
+- 8! = 40,320
+- 9! = 362,880
+- 10! = 3,628,800
+- 11! = 39,916,800
+- 12! = 479,001,600
+- 13! = 6,227,020,800
+- 14! = 87,178,291,200
+
 It appears that a deck of 11 cards exceeds our number of shuffles for each person, and a deck of 12 cards would give us a 1% chance if both of their shuffles are taken into account. So, the answer would be approximately 11 or 12 cards to have a 1% chance of shuffling into the same order at least once in 80 years.
 
 Note that this is a rough approximation, as we're assuming that the shuffles are uniformly distributed among all possible arrangements, which isn't guaranteed in real-world shuffling, and other factors could influence the probability.

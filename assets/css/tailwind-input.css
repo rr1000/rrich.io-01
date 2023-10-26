@@ -1,0 +1,77 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.markdown {
+  @apply prose;
+}
+
+.markdown img{
+  border-radius: 8px;
+}
+
+.rr-tt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.rr-tt:hover::before {
+  bottom: -100%;
+  visibility: visible;
+}
+
+.rr-tt-alt:hover .rr-tt-alt-hover\:block {
+  display: block;
+}
+.rr-tt-alt:hover .rr-tt-alt-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.hoverArea{
+  cursor: pointer;
+}
+
+@media (min-width: 1536px){
+  .container {
+    max-width: 656px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container {
+    max-width: 656px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container {
+    max-width: 656px;
+  }
+}
+
+@media all and (max-width: 768px){
+  .rr-tt-mobile{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #ededed;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 0;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .rr-tt-mobile-icon{
+    display: none;
+    opacity: 0;
+  }
+}

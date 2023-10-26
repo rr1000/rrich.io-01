@@ -1,50 +1,31 @@
 ---
 layout: base
-title: Home » rrich.io
-body: home
 ---
-{% include left-nav.html %}
-<div class="grid">
-    <div class="content">
-        {% include header.html %}
-        <div class="row">
-            <div class="col-xs-12">
-                <img src="/assets/images/home-02.png" alt="Home Image" class="home-image">
-                <figcaption>Image generated with Midjourney v5</figcaption>
-            </div>    
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Latest Post</h2>
-                {% for post in site.posts limit:1 %}
-                <div class="row">
-                    <div class="col-xs-12">
-                        <a href="{{post.url}}" class="latest-post">
-                            <h1>{{ post.cleantitle }}</h1>
-                            <p>{{ post.excerpt }}</p>
-                        </a>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>About</h2>
-                <p>Hello, I'm Ryan — an entrepreneur, engineer, and designer focused on building and growing software companies.</p>
-                <p>My expertise lies at the intersections of privacy, security, regulatory compliance, and software design. I'm currently working on <a href="https://www.haekka.com" target="_blank">Haekka</a>, a training platform designed to meet requirements for HIPAA, SOC 2, PCI, GDPR, CCPA, and everything in between. Haekka was created to work entirely in Slack.</p>
-                <p>Before Haekka, I was Chief Product and Security Officer at <a href="https://datica.com" target="_blank">Datica</a> where I helped organizations protect and integrate healthcare information in the cloud. I led the creation, design and implementation of a secure Kubernetes platform. Datica was acquired in 2019.</p>
-                <p>Before Datica, I co-founded a startup that helped educators streamline their grading process with the assistance of their mobile device. Utilizing optical character recognition technology (way before things like machine learning and AI were cool), I helped college professors drastically improve their grading process, allowing them to spend more time educating.</p>
-                <p>I graduated from <a href="https://www.rit.edu/" target="_blank">R.I.T.</a> in 2013 with a degree in Applied Science.</p>
-                <h2>Work</h2>
-                {% for item in site.data.work %}
-                    <div class="row work-row">
-                        <div class="col-xs-4 col-sm-2 start-sm"><div class="years">{{ item.years }}</div></div>
-                        <div class="col-xs-8 col-sm-5 start-sm company"><a href="{{item.link}}" target="_blank">{{ item.company }}</a> <span class="status">{{ item.status }}</span></div>
-                        <div class="col-xs-12 col-sm-5 end-sm mobile-display-none"><div class="position">{{ item.position }}</div></div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
+<div class="pb-11 px-4">
+    {% include global_nav.html %}
+</div>
+<div class="pb-11 px-4 mx-auto">
+    {% include home_latest_post.html %}
+</div>
+<div class="pb-11 px-4 mx-auto">
+    <h1 class="text-2xl md:text-4xl mb-4 font-bold tracking-tight leading-none text-slate-900">Hello, I'm Ryan.</h1>
+    <p class="leading-6	text-md font-normal text-slate-400 max-w-md">I'm an entrepreneur, engineer, and designer focused on building and growing software companies.</p>
+</div>
+<div class="pb-11 px-4 mx-auto">
+    <h2 class="text-xl md:text-2xl mb-4 tracking-tight font-bold text-slate-900">About</h2>
+    {% include home_about.html %}
+</div>
+<div class="pb-11 px-4 mx-auto">
+    <h2 class="flex items-center text-xl md:text-2xl mb-5 tracking-tight font-bold text-slate-900">
+        <span>Experience</span>
+        <span class="ml-2 font-normal px-2 py-1 text-xs text-slate-500 bg-slate-100 rounded-full">Hover for details</span>
+    </h2>    
+    {% include home_companies_alt.html %}
+</div>
+<div class="pb-11 px-4 mx-auto">
+    <h2 class="text-xl md:text-2xl mb-4 tracking-tight font-bold text-slate-900">Writing</h2>
+    <div class="text-lg font-normal text-slate-500">
+        {% include home_blog_posts.html %}
     </div>
 </div>
+{% include global_footer.html %}

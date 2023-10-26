@@ -1,21 +1,13 @@
-collections:
-  authors:
-    output: true
+title: rrich.io
 
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "articles"
-    values:
-      layout: "article"
-  - scope:
-      path: ""
-    values:
-      layout: "base"
+email: rrichrs@gmail.com
 
-highlighter: rouge
+plugins:
+  - jekyll-feed
+
+include:
+  - "assets/css/main.css"
+
+markdown: kramdown
+kramdown:
+  input: GFM

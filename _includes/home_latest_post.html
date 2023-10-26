@@ -1,0 +1,5 @@
+{% for post in site.posts limit:1 %}
+    <a href="{{post.url}}" class="inline-flex justify-between items-center px-4 py-2 text-sm text-blue-600 bg-blue-50 rounded-full hover:bg-blue-100" role="alert">
+        <span class="text-xs text-blue-400 mr-2">Latest Post: </span><span class="text-sm">{{ post.cleantitle }}</span>
+    </a>
+{% endfor %}
