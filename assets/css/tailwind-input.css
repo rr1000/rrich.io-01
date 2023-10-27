@@ -2,6 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+a {
+  @apply transition duration-200 ease-in-out;
+}
+
+a:hover {
+  @apply transition duration-200 ease-in-out;
+}
+
 .markdown {
   @apply prose;
 }
