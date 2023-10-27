@@ -19,29 +19,31 @@ Array.from(hoverAreas).forEach((hoverArea, index) => {
   const tooltip = tooltips[index];
 
   hoverArea.addEventListener('mousemove', (e) => {
-    const rect = hoverArea.getBoundingClientRect();
-    const tooltipRect = tooltip.getBoundingClientRect();
-    let left = e.clientX - rect.left;
-    let top = e.clientY - rect.top;
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      const rect = hoverArea.getBoundingClientRect();
+      const tooltipRect = tooltip.getBoundingClientRect();
+      let left = e.clientX - rect.left;
+      let top = e.clientY - rect.top;
 
-    // Adjust the tooltip position if it goes off the right edge of the screen
-    if (e.clientX + tooltipRect.width > window.innerWidth) {
-        left = window.innerWidth - tooltipRect.width - rect.left;
+      if (e.clientX + tooltipRect.width > window.innerWidth) {
+          left = window.innerWidth - tooltipRect.width - rect.left;
+      }
+
+      if (e.clientY + tooltipRect.height > window.innerHeight) {
+          top = window.innerHeight - tooltipRect.height - rect.top;
+      }
+
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
+      tooltip.classList.remove('hidden');
+      tooltip.classList.remove('opacity-0');
     }
-
-    // Adjust the tooltip position if it goes off the bottom edge of the screen
-    if (e.clientY + tooltipRect.height > window.innerHeight) {
-        top = window.innerHeight - tooltipRect.height - rect.top;
-    }
-
-    tooltip.style.left = left + 'px';
-    tooltip.style.top = top + 'px';
-    tooltip.classList.remove('hidden');
-    tooltip.classList.remove('opacity-0');
   });
 
   hoverArea.addEventListener('mouseleave', () => {
-    tooltip.classList.add('hidden');
-    tooltip.classList.add('opacity-0');
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      tooltip.classList.add('hidden');
+      tooltip.classList.add('opacity-0');
+    }
   });
 });
