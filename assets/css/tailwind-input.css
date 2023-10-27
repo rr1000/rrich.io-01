@@ -6,8 +6,20 @@
   @apply prose;
 }
 
+.markdown a{
+  @apply text-blue-500 no-underline;
+}
+
+.markdown a:hover{
+  @apply underline;
+}
+
 .markdown img{
   border-radius: 8px;
+}
+
+.markdown .rr--highlight{
+  @apply bg-yellow-300 text-orange-950;
 }
 
 .rr-tt::before {

@@ -5,7 +5,7 @@ year: 2023
 reference: "#"
 roam: "#"
 ---
-The following is an unedited conversation I recently had with ChatGPT.
+<span class="rr--highlight">The following is an unedited conversation I recently had with ChatGPT.</span>
 
 **User:** I have 100 unique playing cards.
 
