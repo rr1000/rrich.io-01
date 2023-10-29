@@ -1447,6 +1447,10 @@ a:hover {
     margin-bottom: 0px;
   }
 
+  .md\:inline-block {
+    display: inline-block;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
