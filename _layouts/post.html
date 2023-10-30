@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: 'Specialized in privacy, security, compliance, and software design. Currently the CTO at Haekka, a Slack-based training platform. Former Chief Product and Security Officer at Datica.' }}">
+    <meta name="keywords" content="Privacy, Security, Compliance, Software Design, CTO, Haekka, Slack-based Training, Datica, Kubernetes, Optical Character Recognition, AI, Education, R.I.T.">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ page.description | default: 'Specialized in privacy, security, compliance, and software design. Currently the CTO at Haekka, a Slack-based training platform. Former Chief Product and Security Officer at Datica.' }}">
+    <meta property="og:image" content="{{ '/assets/images/og-image.jpg' | relative_url }}">
+    <meta property="og:url" content="{{ page.url | default: site.url }}">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: 'Specialized in privacy, security, compliance, and software design. Currently the CTO at Haekka, a Slack-based training platform. Former Chief Product and Security Officer at Datica.' }}">
+    <meta name="twitter:image" content="{{ '/assets/images/twitter-card.jpg' | relative_url }}">
+    
+    <title>{{ page.cleantitle | default: "Ryan Rich | Entrepreneur, Engineer, and Designer | rrich.io"}}</title>
+    
+    <!-- Favicon links -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
 
-  <title>{{ page.title | default: site.title }}</title>
-  
-  <!-- Favicon links -->
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
 
-  <!-- Apple Touch Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+    <!-- Android and other platforms -->
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/images/android-chrome-192x192.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/android-chrome-512x512.png' | relative_url }}">
 
-  <!-- Android and other platforms -->
-  <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/images/android-chrome-192x192.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/android-chrome-512x512.png' | relative_url }}">
-
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ page.url | default: site.url }}">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Your Name",
+        "jobTitle": "CTO",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Haekka"
+        },
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Rochester Institute of Technology"
+        },
+        "description": "A professional specializing in privacy, security, compliance, and software design."
+    }
+    </script>
 </head>
 <body>
   <main>
