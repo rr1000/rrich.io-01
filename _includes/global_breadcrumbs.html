@@ -1,0 +1,11 @@
+{% assign crumbs = page.url | split: '/' %}
+<nav class="mb-2">
+    <a href="/writing" class="text-xs text-blue-500 hover:text-blue-600">Writing</a>
+    {% for crumb in crumbs %}
+        {% if forloop.last %}
+          <span class="text-xs text-slate-400">{{ page.cleantitle }}</span>
+        {% else %}
+          <span class="text-xs text-slate-400">{{ crumb | replace: '-', ' ' | capitalize }}</span> •
+        {% endif %}
+    {% endfor %}
+</nav>
