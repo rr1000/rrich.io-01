@@ -87,7 +87,7 @@ Resources:
     Properties:
       BackupRetentionPeriod: 7
       CopyTagsToSnapshot: true
-      # ... Other RDS configurations
+      # ...
 ```
 
 ### Step 5: Monitoring with AWS CloudTrail
@@ -103,7 +103,7 @@ Resources:
       IncludeGlobalServiceEvents: true
       IsMultiRegionTrail: false
       EnableLogFileValidation: true
-      # ... Other CloudTrail configurations
+      # ...
 ```
 
 ### Step 6: Implementing IAM Policies
